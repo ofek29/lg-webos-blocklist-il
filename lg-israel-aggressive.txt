@@ -1,0 +1,45 @@
+# LG webOS Israel / EIC (aggressive add-on)
+# Tier 2: optional. Add alongside lg-israel.txt.
+# May affect TV features, ThinQ, and other LG devices.
+
+# Shared TV services
+il.info.lgsmartad.com # Ad-info service. Related regional endpoint has location-setup breakage reports.
+il.rdx2.lgtvsdp.com # SDP/content service. Regional family supplies store artwork.
+il.lgtvsdp.com # SDP platform. Reported store/time-sync breakage in other regions.
+il.tvsdp.lgeapi.com # TV SDP API. Exact function unconfirmed.
+il.lgeapi.com # Platform API. Regional family supports ThinQ sign-in.
+eic.lgeapi.com # Platform API. DNS-verified EIC variant of il.lgeapi.com.
+il.emp.lgsmartplatform.com # Account/platform service. May affect ThinQ sign-in.
+eic.emp.lgsmartplatform.com # Account service. DNS-verified EIC variant of il.emp.lgsmartplatform.com.
+il.ibs.lgappstv.com # Service-location family. Historical entry, NXDOMAIN 2026-09-09.
+eic.ads.lgtvcommon.com # Reported ads service. DNS-verified EIC variant of HaGeZi's ads family.
+eic.wiseconfig.lgtvcommon.com # Smart configuration. DNS-verified EIC variant of HaGeZi's wiseconfig family.
+eic.service.lgtvcommon.com # Shared webOS service. Home-screen/guide-data risk.
+eic.cdpsvc.lgtvcommon.com # Content/data service. DNS-verified EIC variant of upstream cdpsvc. Guide-data risk.
+eic.rdl.lgtvcommon.com # Reported rdxd analytics uploads (Wendell). DNS-verified EIC variant of rdl service.
+lgtvonline.lge.com # Shared TV online service. Exact function unconfirmed.
+smartshare.lgtvsdp.com # Upstream SmartShare service. Exact function unconfirmed.
+ddjpc.lg.com # TV function unknown. CNAME to fallback.attntags.com.
+fr.security.lgtvsdp.com # Security-named SDP service seen in IL traffic. Exact role unknown.
+il.security.lgtvsdp.com # Role unknown. DNS-verified IL variant of fr.security.lgtvsdp.com.
+
+# Shared ThinQ cloud services
+eic-mclip.lgthinq.com # ThinQ HTTPS service used by appliances. Not proven telemetry-only.
+common.iot.eic.lgthinq.com # ThinQ IoT endpoint. May affect cloud connectivity.
+eic-api.lgthinq.com # ThinQ API. Cloud-control risk.
+eic-service.lgthinq.com # ThinQ service. Cloud-control risk.
+eic-iotservice.lgthinq.com # ThinQ IoT service. Exact role unconfirmed.
+eic-common.lgthinq.com # ThinQ common API, also used in appliance routing.
+
+# CNAME backends (shared-service risk)
+eic-mclip-lgthinq-com.aws-thinq-prd.net # ThinQ HTTPS backend of eic-mclip.lgthinq.com.
+eic-svc-lgthinq-com.aws-thinq-prd.net # ThinQ backend of eic-service.lgthinq.com.
+eic-api-lgthinq-com.aws-thinq-prd.net # ThinQ API backend of eic-api.lgthinq.com.
+il-lgeapi-com.esi-prd.net # Platform API backend of il.lgeapi.com.
+eic-emp-lgsmartplatform-com.lgemp-prd.net # Account backend of il.emp.lgsmartplatform.com and its EIC variant.
+
+# Tier 3: keep update/content services inactive. Other lists may still block them.
+# snu.lge.com # Firmware update checks.
+# ngfts.lge.com # LG content CDN. Blocking breaks store artwork.
+# gfts.lge.com # LG content CDN. Exact app/firmware payloads unconfirmed.
+# eic-ngfts.lge.com # Regional content CDN. Service family has artwork breakage reports.

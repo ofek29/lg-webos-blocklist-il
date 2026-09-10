@@ -1,0 +1,17 @@
+# LG webOS Israel / EIC (default)
+# Tier 1: lower-risk ads, recommendations, and telemetry.
+# For extra blocking, also add lg-israel-aggressive.txt.
+
+il.ad.lgsmartad.com # LG ad serving.
+eic.homeprv.lgtvcommon.com # Reported home-screen promotions.
+eic.nudge.lgtvcommon.com # Reported promotional nudges.
+eic.thinqrecommend.lgtvcommon.com # Reported ThinQ/content recommendations.
+il.lgrecommends.lgappstv.com # Reported app recommendations.
+eic.recommend.lgtvcommon.com # Recommendations. DNS-verified EIC variant of upstream recommend service.
+eic.cdpbeacon.lgtvcommon.com # Reported analytics beacon. DNS-verified EIC variant of upstream cdpbeacon service.
+
+# Tier 3: keep update/content services inactive. Other lists may still block them.
+# snu.lge.com # Firmware update checks.
+# ngfts.lge.com # LG content CDN. Blocking breaks store artwork.
+# gfts.lge.com # LG content CDN. Exact app/firmware payloads unconfirmed.
+# eic-ngfts.lge.com # Regional content CDN. Service family has artwork breakage reports.
