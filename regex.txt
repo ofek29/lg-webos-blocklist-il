@@ -1,0 +1,45 @@
+# LG webOS optional Pi-hole regex rules
+# Add selected patterns as regex deny entries, not as a list URL.
+# Copy patterns only, without comments.
+
+# Tier 1: lower-risk recommendations and telemetry. Broader than exact lists.
+
+# App recommendations: il.lgrecommends.lgappstv.com.
+(^|\.)lgrecommends\.lgappstv\.com$
+# Promotional nudges: eic.nudge.lgtvcommon.com.
+(^|\.)nudge\.lgtvcommon\.com$
+# Home-screen promotions: eic.homeprv.lgtvcommon.com.
+(^|\.)homeprv\.lgtvcommon\.com$
+# Recommendations: eic.recommend.lgtvcommon.com.
+(^|\.)recommend\.lgtvcommon\.com$
+# ThinQ/content recommendations: eic.thinqrecommend.lgtvcommon.com.
+(^|\.)thinqrecommend\.lgtvcommon\.com$
+# Reported analytics beacons: eic.cdpbeacon.lgtvcommon.com.
+(^|\.)cdpbeacon\.lgtvcommon\.com$
+
+# Tier 2: aggressive (disabled). Enable individually. May break features.
+
+# All smart-ad endpoints, including il.ad.lgsmartad.com and il.info.lgsmartad.com. Location-setup risk.
+# (^|\.)lgsmartad\.com$
+# Reported crash uploads (Wendell): il.rdx2.nextlgsdp.com. Blocking impact untested.
+# Narrow alternative to nextlgsdp.com that leaves il.nextlgsdp.com unmatched.
+# (^|\.)rdx2\.nextlgsdp\.com$
+# Entire next-generation SDP family, including apps/auth/content delivery. Reported Content Store breakage.
+# (^|\.)nextlgsdp\.com$
+# SDP/content: il.rdx2.lgtvsdp.com. Store-artwork risk.
+# (^|\.)rdx2\.lgtvsdp\.com$
+# SmartShare: smartshare.lgtvsdp.com. Exact role unconfirmed.
+# (^|\.)smartshare\.lgtvsdp\.com$
+# Service-location endpoints: il.ibs.lgappstv.com. Location-setup risk.
+# (^|\.)ibs\.lgappstv\.com$
+# Shared content/data: eic.cdpsvc.lgtvcommon.com. Guide-data risk.
+# (^|\.)cdpsvc\.lgtvcommon\.com$
+# Reported rdxd analytics uploads (Wendell): eic.rdl.lgtvcommon.com. Blocking impact untested.
+# (^|\.)rdl\.lgtvcommon\.com$
+# Blanket: includes eic.service.lgtvcommon.com and eic.netflixvoice.lgtvcommon.com. Home-screen/Netflix voice-search risk.
+# (^|\.)lgtvcommon\.com$
+
+# Tier 3: no rules for snu.lge.com, ngfts.lge.com, gfts.lge.com, or eic-ngfts.lge.com.
+# Other lists may still block these hosts.
+# Omitted upstream rule: ^[a-rt-z][a-z]{10,14}$
+# It matches unrelated 11-15-letter lowercase hostnames except those starting with s (e.g. livingroomtv).
