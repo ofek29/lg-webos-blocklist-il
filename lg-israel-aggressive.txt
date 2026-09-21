@@ -12,6 +12,7 @@ eic.lgeapi.com # Platform API. DNS-verified EIC variant of il.lgeapi.com.
 il.emp.lgsmartplatform.com # Account/platform service. May affect ThinQ sign-in.
 eic.emp.lgsmartplatform.com # Account service. DNS-verified EIC variant of il.emp.lgsmartplatform.com.
 il.ibs.lgappstv.com # Service-location family. Historical entry, NXDOMAIN 2026-09-09.
+il.lgrecommends.lgappstv.com # Content Store UI and app recommendations. Blocking breaks the Content Store, confirmed on a real TV 2026-09-21.
 eic.ads.lgtvcommon.com # Reported ads service. DNS-verified EIC variant of HaGeZi's ads family.
 eic.wiseconfig.lgtvcommon.com # Smart configuration. DNS-verified EIC variant of HaGeZi's wiseconfig family.
 eic.service.lgtvcommon.com # Shared webOS service. Home-screen/guide-data risk.

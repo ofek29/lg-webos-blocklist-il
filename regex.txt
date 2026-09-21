@@ -4,8 +4,6 @@
 
 # Tier 1: lower-risk recommendations and telemetry. Broader than exact lists.
 
-# App recommendations: il.lgrecommends.lgappstv.com.
-(^|\.)lgrecommends\.lgappstv\.com$
 # Promotional nudges: eic.nudge.lgtvcommon.com.
 (^|\.)nudge\.lgtvcommon\.com$
 # Home-screen promotions: eic.homeprv.lgtvcommon.com.
@@ -32,6 +30,8 @@
 # (^|\.)smartshare\.lgtvsdp\.com$
 # Service-location endpoints: il.ibs.lgappstv.com. Location-setup risk.
 # (^|\.)ibs\.lgappstv\.com$
+# Content Store UI and app recommendations: il.lgrecommends.lgappstv.com. Breaks the Content Store.
+# (^|\.)lgrecommends\.lgappstv\.com$
 # Shared content/data: eic.cdpsvc.lgtvcommon.com. Guide-data risk.
 # (^|\.)cdpsvc\.lgtvcommon\.com$
 # Reported rdxd analytics uploads (Wendell): eic.rdl.lgtvcommon.com. Blocking impact untested.
