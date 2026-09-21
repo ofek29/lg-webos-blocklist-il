@@ -6,7 +6,6 @@ il.ad.lgsmartad.com # LG ad serving.
 eic.homeprv.lgtvcommon.com # Reported home-screen promotions.
 eic.nudge.lgtvcommon.com # Reported promotional nudges.
 eic.thinqrecommend.lgtvcommon.com # Reported ThinQ/content recommendations.
-il.lgrecommends.lgappstv.com # Reported app recommendations.
 eic.recommend.lgtvcommon.com # Recommendations. DNS-verified EIC variant of upstream recommend service.
 eic.cdpbeacon.lgtvcommon.com # Reported analytics beacon. DNS-verified EIC variant of upstream cdpbeacon service.
 

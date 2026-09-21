@@ -6,7 +6,6 @@
 0.0.0.0 eic.homeprv.lgtvcommon.com # Reported home-screen promotions.
 0.0.0.0 eic.nudge.lgtvcommon.com # Reported promotional nudges.
 0.0.0.0 eic.thinqrecommend.lgtvcommon.com # Reported ThinQ/content recommendations.
-0.0.0.0 il.lgrecommends.lgappstv.com # Reported app recommendations.
 0.0.0.0 eic.recommend.lgtvcommon.com # Recommendations. DNS-verified EIC variant of upstream recommend service.
 0.0.0.0 eic.cdpbeacon.lgtvcommon.com # Reported analytics beacon. DNS-verified EIC variant of upstream cdpbeacon service.
 
